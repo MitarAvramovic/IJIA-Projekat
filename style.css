@@ -36,6 +36,7 @@ h1 {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: large;
 }
 
 .navbar a.active {
@@ -54,15 +55,19 @@ main {
 .highlights {
     display: flex;
     gap: 20px;
+
+    
 }
 
 .highlight-item {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #f1c27d;
+    border: 1px solid wheat;
     border-radius: 5px;
     padding: 15px;
     flex: 1;
     text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 
 
@@ -117,16 +122,77 @@ div img {
 }
 
 .container{
-    border: 1px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
+    width: calc(25% - 20px);
     text-align: center;
+    background-color: #f1c27d;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-weight: bold;
+    font-size: larger;
+
 }
 
-main .container{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    gap: 30px;
+}
+
+.brewing-box{
+    width: calc(33% - 20px);
+    text-align: center;
+    background-color: #f1c27d;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.istorija{
+    width: 100%;
+    text-align: center;
+    background-color: #f1c27d;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px 5px burlywood;
+    }
+
+    to {
+        box-shadow: 0 0 20px 10px black;
+    }
+}
+
+.container:hover {
+    animation: glow 2s infinite alternate;
+}
+
+a:hover {
+    color: burlywood;
+    transform: scale(1.2);
+}
+
+.nav-menu a:hover {
+    color: #2e2e2e;
+    background-color: wheat;
+    transform: scale(1.1);
+}
+
+.contact-form button:hover {
+    background-color: burlywood;
+}
+
+.brewing-box:hover {
+    animation: glow 2s infinite alternate;
 }
