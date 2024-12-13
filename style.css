@@ -10,8 +10,9 @@ header {
     display: flex;
     align-items: center;
     background-color: #2d2d2d;
-    padding: 10px;
+    padding: 10px 20px;
     color: white;
+    justify-content: space-between;                                           
 }
 
 .nav-logo {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .navbar a.active {
-    text-decoration: underline;
+    color: burlywood;
 }
 
 main {
@@ -64,10 +65,68 @@ main {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    background-color: #2d2d2d;
-    color: white;
+
+
+section img{
+    height: 10%;
+    width: 10%;
+}
+
+div img {
+    height: 40%;
+    width: 40%;
+}
+
+.contact-form {
+    max-width: 70%;
+    margin: 0 auto;
     padding: 10px;
-    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #005477;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+main .container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 30px;
 }
